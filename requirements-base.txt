@@ -1,0 +1,8 @@
+django
+djangorestframework
+drf-spectacular[sidecar]
+django-crispy-forms
+crispy-bootstrap5
+ipython
+django-environ
+django-cors-headers
