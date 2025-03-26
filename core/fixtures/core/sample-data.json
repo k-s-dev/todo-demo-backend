@@ -1,0 +1,924 @@
+[
+    {
+        "model": "core.workspace",
+        "pk": 1,
+        "fields": {
+            "name": "default",
+            "description": "",
+            "is_default": true,
+            "created_at": "2024-11-12T04:03:05.344Z",
+            "updated_at": "2025-03-15T07:11:35.492Z",
+            "created_by": "user_2teYnlEZbbTDBEW1dfRtTpMBO7H"
+        }
+    },
+    {
+        "model": "core.workspace",
+        "pk": 2,
+        "fields": {
+            "name": "other",
+            "description": "",
+            "is_default": false,
+            "created_at": "2024-11-12T04:03:05.344Z",
+            "updated_at": "2024-11-12T04:03:05.344Z",
+            "created_by": "user_2teYnlEZbbTDBEW1dfRtTpMBO7H"
+        }
+    },
+    {
+        "model": "core.workspace",
+        "pk": 59,
+        "fields": {
+            "name": "Work",
+            "description": "",
+            "is_default": true,
+            "created_at": "2025-03-24T05:32:30.375Z",
+            "updated_at": "2025-03-24T05:32:30.375Z",
+            "created_by": "user_2uhUlctJBGjkRnBtvgMl0W1RLdG"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 1,
+        "fields": {
+            "name": "Personal",
+            "description": "",
+            "workspace": 1,
+            "parent": null,
+            "created_at": "2024-11-12T04:05:47.360Z",
+            "updated_at": "2025-03-17T11:16:02.515Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 2,
+        "fields": {
+            "name": "Home",
+            "description": "",
+            "workspace": 1,
+            "parent": 1,
+            "created_at": "2024-11-12T04:05:58.602Z",
+            "updated_at": "2024-11-12T04:05:58.602Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 3,
+        "fields": {
+            "name": "Proffessional",
+            "description": "",
+            "workspace": 1,
+            "parent": null,
+            "created_at": "2024-11-12T04:06:17.273Z",
+            "updated_at": "2024-11-12T04:06:17.273Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 4,
+        "fields": {
+            "name": "Finance",
+            "description": "",
+            "workspace": 1,
+            "parent": 1,
+            "created_at": "2024-11-12T04:06:31.101Z",
+            "updated_at": "2024-11-12T04:06:31.101Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 5,
+        "fields": {
+            "name": "Learn",
+            "description": "",
+            "workspace": 1,
+            "parent": 3,
+            "created_at": "2024-11-12T04:06:54.920Z",
+            "updated_at": "2024-11-12T04:06:54.920Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 6,
+        "fields": {
+            "name": "Tax",
+            "description": "",
+            "workspace": 1,
+            "parent": 4,
+            "created_at": "2024-11-17T12:43:36.156Z",
+            "updated_at": "2024-11-17T12:49:40.037Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 7,
+        "fields": {
+            "name": "Work",
+            "description": "",
+            "workspace": 2,
+            "parent": null,
+            "created_at": "2024-11-17T12:43:36.156Z",
+            "updated_at": "2024-11-17T12:49:40.037Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 10,
+        "fields": {
+            "name": "Random 1",
+            "description": "",
+            "workspace": 2,
+            "parent": null,
+            "created_at": "2025-03-17T07:24:15.298Z",
+            "updated_at": "2025-03-17T07:24:15.298Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 18,
+        "fields": {
+            "name": "Admin",
+            "description": "",
+            "workspace": 59,
+            "parent": null,
+            "created_at": "2025-03-24T09:15:17.002Z",
+            "updated_at": "2025-03-24T09:15:17.002Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 19,
+        "fields": {
+            "name": "Operations",
+            "description": "",
+            "workspace": 59,
+            "parent": null,
+            "created_at": "2025-03-24T09:15:32.400Z",
+            "updated_at": "2025-03-24T09:15:32.400Z"
+        }
+    },
+    {
+        "model": "core.category",
+        "pk": 20,
+        "fields": {
+            "name": "Design",
+            "description": "",
+            "workspace": 59,
+            "parent": null,
+            "created_at": "2025-03-24T09:15:44.694Z",
+            "updated_at": "2025-03-24T09:15:44.694Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 1,
+        "fields": {
+            "name": "learn",
+            "workspace": 1,
+            "created_at": "2024-11-12T04:03:18.893Z",
+            "updated_at": "2024-11-12T04:03:18.893Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 2,
+        "fields": {
+            "name": "python",
+            "workspace": 1,
+            "created_at": "2024-11-12T04:03:37.201Z",
+            "updated_at": "2024-11-12T04:03:37.201Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 3,
+        "fields": {
+            "name": "dev",
+            "workspace": 1,
+            "created_at": "2024-11-12T04:03:48.150Z",
+            "updated_at": "2024-11-12T04:03:48.151Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 4,
+        "fields": {
+            "name": "web dev",
+            "workspace": 1,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 5,
+        "fields": {
+            "name": "admin",
+            "workspace": 2,
+            "created_at": "2024-11-12T04:03:18.893Z",
+            "updated_at": "2024-11-12T04:03:18.893Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 6,
+        "fields": {
+            "name": "design",
+            "workspace": 2,
+            "created_at": "2024-11-12T04:03:37.201Z",
+            "updated_at": "2024-11-12T04:03:37.201Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 7,
+        "fields": {
+            "name": "engineering",
+            "workspace": 2,
+            "created_at": "2024-11-12T04:03:48.150Z",
+            "updated_at": "2024-11-12T04:03:48.151Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 8,
+        "fields": {
+            "name": "construction",
+            "workspace": 2,
+            "created_at": "2025-03-04T11:43:43.279Z",
+            "updated_at": "2025-03-04T11:43:43.279Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 11,
+        "fields": {
+            "name": "tag 1",
+            "workspace": 59,
+            "created_at": "2025-03-25T08:59:46.895Z",
+            "updated_at": "2025-03-25T08:59:46.895Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 12,
+        "fields": {
+            "name": "tag 2",
+            "workspace": 59,
+            "created_at": "2025-03-25T08:59:58.460Z",
+            "updated_at": "2025-03-25T08:59:58.460Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 13,
+        "fields": {
+            "name": "tag 3",
+            "workspace": 59,
+            "created_at": "2025-03-25T09:00:11.819Z",
+            "updated_at": "2025-03-25T09:00:11.819Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 14,
+        "fields": {
+            "name": "tag 4",
+            "workspace": 59,
+            "created_at": "2025-03-25T09:00:38.263Z",
+            "updated_at": "2025-03-25T09:00:38.263Z"
+        }
+    },
+    {
+        "model": "core.tag",
+        "pk": 15,
+        "fields": {
+            "name": "tag 5",
+            "workspace": 59,
+            "created_at": "2025-03-25T09:00:47.852Z",
+            "updated_at": "2025-03-25T09:00:47.852Z"
+        }
+    },
+    {
+        "model": "core.priority",
+        "pk": 1,
+        "fields": {
+            "name": "High",
+            "description": null,
+            "order": 0,
+            "workspace": 1,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.priority",
+        "pk": 2,
+        "fields": {
+            "name": "Medium",
+            "description": null,
+            "order": 0,
+            "workspace": 1,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.priority",
+        "pk": 3,
+        "fields": {
+            "name": "Low",
+            "description": null,
+            "order": 0,
+            "workspace": 1,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.priority",
+        "pk": 4,
+        "fields": {
+            "name": "High",
+            "description": null,
+            "order": 3,
+            "workspace": 2,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.priority",
+        "pk": 5,
+        "fields": {
+            "name": "Medium",
+            "description": null,
+            "order": 2,
+            "workspace": 2,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.priority",
+        "pk": 6,
+        "fields": {
+            "name": "Low",
+            "description": null,
+            "order": 1,
+            "workspace": 2,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.priority",
+        "pk": 17,
+        "fields": {
+            "name": "High",
+            "description": null,
+            "order": 3,
+            "workspace": 59,
+            "created_at": "2025-03-24T05:32:34.012Z",
+            "updated_at": "2025-03-24T05:32:34.012Z"
+        }
+    },
+    {
+        "model": "core.priority",
+        "pk": 18,
+        "fields": {
+            "name": "Medium",
+            "description": null,
+            "order": 2,
+            "workspace": 59,
+            "created_at": "2025-03-24T05:32:34.956Z",
+            "updated_at": "2025-03-24T05:32:34.956Z"
+        }
+    },
+    {
+        "model": "core.priority",
+        "pk": 19,
+        "fields": {
+            "name": "Low",
+            "description": null,
+            "order": 1,
+            "workspace": 59,
+            "created_at": "2025-03-24T05:32:35.288Z",
+            "updated_at": "2025-03-24T05:32:35.288Z"
+        }
+    },
+    {
+        "model": "core.status",
+        "pk": 1,
+        "fields": {
+            "name": "Todo",
+            "description": null,
+            "order": 0,
+            "workspace": 1,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.status",
+        "pk": 2,
+        "fields": {
+            "name": "In-progress",
+            "description": null,
+            "order": 0,
+            "workspace": 1,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.status",
+        "pk": 3,
+        "fields": {
+            "name": "Done",
+            "description": null,
+            "order": 0,
+            "workspace": 1,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.status",
+        "pk": 4,
+        "fields": {
+            "name": "Todo",
+            "description": null,
+            "order": 0,
+            "workspace": 2,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.status",
+        "pk": 5,
+        "fields": {
+            "name": "In-progress",
+            "description": null,
+            "order": 0,
+            "workspace": 2,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.status",
+        "pk": 6,
+        "fields": {
+            "name": "Done",
+            "description": null,
+            "order": 0,
+            "workspace": 2,
+            "created_at": "2024-11-12T04:04:03.845Z",
+            "updated_at": "2024-11-12T04:04:03.845Z"
+        }
+    },
+    {
+        "model": "core.status",
+        "pk": 16,
+        "fields": {
+            "name": "Done",
+            "description": null,
+            "order": 1,
+            "workspace": 59,
+            "created_at": "2025-03-24T05:32:35.068Z",
+            "updated_at": "2025-03-24T05:32:35.068Z"
+        }
+    },
+    {
+        "model": "core.status",
+        "pk": 17,
+        "fields": {
+            "name": "Todo",
+            "description": null,
+            "order": 3,
+            "workspace": 59,
+            "created_at": "2025-03-24T05:32:35.346Z",
+            "updated_at": "2025-03-24T05:32:35.346Z"
+        }
+    },
+    {
+        "model": "core.status",
+        "pk": 18,
+        "fields": {
+            "name": "In-progress",
+            "description": null,
+            "order": 2,
+            "workspace": 59,
+            "created_at": "2025-03-24T05:32:35.814Z",
+            "updated_at": "2025-03-24T05:32:35.814Z"
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 5,
+        "fields": {
+            "uuid": "924590ec-eef5-430c-bf2b-a01c87523601",
+            "title": "Another project",
+            "detail": "",
+            "workspace": 1,
+            "category": 3,
+            "status": null,
+            "priority": 1,
+            "parent": null,
+            "is_visible": true,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": 1,
+            "actual_effort": 5,
+            "created_at": "2025-03-07T01:21:31.598Z",
+            "updated_at": "2025-03-23T02:45:01.295Z",
+            "tags": [
+                1,
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 13,
+        "fields": {
+            "uuid": "a62285fd-852a-495e-953c-ce5bf3bd7da8",
+            "title": "Project 1",
+            "detail": "",
+            "workspace": 1,
+            "category": 1,
+            "status": null,
+            "priority": null,
+            "parent": null,
+            "is_visible": true,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2025-03-22T04:26:51.822Z",
+            "updated_at": "2025-03-22T10:24:23.901Z",
+            "tags": [
+                1,
+                3,
+                5
+            ]
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 32,
+        "fields": {
+            "uuid": "4aae75d4-8265-4cec-9c8d-414da1e9f78c",
+            "title": "random",
+            "detail": "",
+            "workspace": 1,
+            "category": 3,
+            "status": null,
+            "priority": null,
+            "parent": null,
+            "is_visible": true,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2025-03-22T12:37:01.912Z",
+            "updated_at": "2025-03-22T12:37:01.912Z",
+            "tags": [
+                1,
+                4
+            ]
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 33,
+        "fields": {
+            "uuid": "e08fadf2-8077-4394-ad71-119059f20175",
+            "title": "random 2",
+            "detail": "",
+            "workspace": 1,
+            "category": 3,
+            "status": null,
+            "priority": null,
+            "parent": null,
+            "is_visible": true,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2025-03-23T02:35:16.340Z",
+            "updated_at": "2025-03-23T02:35:16.340Z",
+            "tags": [
+                1,
+                3
+            ]
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 34,
+        "fields": {
+            "uuid": "851781b9-c8dd-4036-b237-a14b1fea735d",
+            "title": "Project 1",
+            "detail": "",
+            "workspace": 59,
+            "category": 18,
+            "status": 18,
+            "priority": 17,
+            "parent": null,
+            "is_visible": true,
+            "estimated_start_date": "2025-03-24T00:00:00Z",
+            "estimated_end_date": "2025-03-31T00:00:00Z",
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2025-03-24T10:35:48.291Z",
+            "updated_at": "2025-03-25T08:34:55.957Z",
+            "tags": []
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 35,
+        "fields": {
+            "uuid": "49762f50-3ad8-4945-b778-fd78f15018ea",
+            "title": "Project 1.1",
+            "detail": "",
+            "workspace": 59,
+            "category": 18,
+            "status": 16,
+            "priority": 18,
+            "parent": 34,
+            "is_visible": true,
+            "estimated_start_date": "2025-03-27T00:00:00Z",
+            "estimated_end_date": "2025-03-29T00:00:00Z",
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2025-03-24T10:37:02.225Z",
+            "updated_at": "2025-03-25T08:34:55.965Z",
+            "tags": []
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 37,
+        "fields": {
+            "uuid": "ff6da29b-feff-4f2d-aabe-cbd46fb9b7ea",
+            "title": "Project 1.2",
+            "detail": "",
+            "workspace": 59,
+            "category": 18,
+            "status": 18,
+            "priority": 19,
+            "parent": 34,
+            "is_visible": true,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2025-03-24T11:04:03.254Z",
+            "updated_at": "2025-03-25T08:34:55.968Z",
+            "tags": []
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 38,
+        "fields": {
+            "uuid": "05fcdbb6-35ad-450c-80b3-759c210d5d3e",
+            "title": "Project 2",
+            "detail": "",
+            "workspace": 59,
+            "category": 19,
+            "status": 16,
+            "priority": null,
+            "parent": null,
+            "is_visible": false,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": "2025-03-03T00:00:00Z",
+            "actual_end_date": "2025-03-05T00:00:00Z",
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2025-03-24T12:40:28.551Z",
+            "updated_at": "2025-03-25T04:11:38.866Z",
+            "tags": []
+        }
+    },
+    {
+        "model": "core.task",
+        "pk": 8,
+        "fields": {
+            "uuid": "91cb6e2f-7544-46ce-9824-788c30228b60",
+            "title": "Independent task",
+            "detail": "edit 1, added tags",
+            "workspace": 1,
+            "category": 1,
+            "project": null,
+            "status": null,
+            "priority": null,
+            "parent": null,
+            "is_visible": true,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2024-11-28T01:34:47.185Z",
+            "updated_at": "2025-03-22T09:24:27.464Z",
+            "tags": []
+        }
+    },
+    {
+        "model": "core.task",
+        "pk": 9,
+        "fields": {
+            "uuid": "7602c562-b1a2-4fef-afc4-57b5f4a68216",
+            "title": "Independent nested task",
+            "detail": "",
+            "workspace": 1,
+            "category": 1,
+            "project": null,
+            "status": null,
+            "priority": null,
+            "parent": 8,
+            "is_visible": true,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2024-11-29T02:37:50.948Z",
+            "updated_at": "2025-03-22T09:24:27.490Z",
+            "tags": []
+        }
+    },
+    {
+        "model": "core.task",
+        "pk": 10,
+        "fields": {
+            "uuid": "04b6c1f2-2a5e-4ad8-bdb3-2e26bc6c5b77",
+            "title": "Independent archived task",
+            "detail": "",
+            "workspace": 1,
+            "category": 1,
+            "project": null,
+            "status": null,
+            "priority": null,
+            "parent": null,
+            "is_visible": false,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2024-11-29T10:12:22.250Z",
+            "updated_at": "2024-11-29T10:12:22.250Z",
+            "tags": []
+        }
+    },
+    {
+        "model": "core.task",
+        "pk": 11,
+        "fields": {
+            "uuid": "5719516a-64c6-41db-acd4-0677696f5410",
+            "title": "dig well",
+            "detail": "",
+            "workspace": 2,
+            "category": 7,
+            "project": null,
+            "status": 4,
+            "priority": 4,
+            "parent": null,
+            "is_visible": true,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2025-03-04T11:44:41.335Z",
+            "updated_at": "2025-03-04T11:44:41.335Z",
+            "tags": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "core.task",
+        "pk": 13,
+        "fields": {
+            "uuid": "782bfacb-a8cd-4c56-a386-953b57b902ee",
+            "title": "Task 1",
+            "detail": "",
+            "workspace": 59,
+            "category": 18,
+            "project": 34,
+            "status": 17,
+            "priority": 17,
+            "parent": null,
+            "is_visible": true,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2025-03-25T04:22:55.394Z",
+            "updated_at": "2025-03-25T08:34:55.960Z",
+            "tags": []
+        }
+    },
+    {
+        "model": "core.task",
+        "pk": 14,
+        "fields": {
+            "uuid": "58e98b16-5d00-481f-98ba-58358a1cd945",
+            "title": "Independent task 1",
+            "detail": "",
+            "workspace": 59,
+            "category": 18,
+            "project": null,
+            "status": null,
+            "priority": null,
+            "parent": null,
+            "is_visible": true,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2025-03-25T04:23:29.822Z",
+            "updated_at": "2025-03-25T09:13:04.188Z",
+            "tags": []
+        }
+    },
+    {
+        "model": "core.task",
+        "pk": 15,
+        "fields": {
+            "uuid": "a7be2e3b-c112-48df-8dca-e4bc46b10426",
+            "title": "Independent task 1.1",
+            "detail": "",
+            "workspace": 59,
+            "category": 18,
+            "project": null,
+            "status": 16,
+            "priority": 18,
+            "parent": 14,
+            "is_visible": true,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2025-03-25T08:38:16.880Z",
+            "updated_at": "2025-03-25T09:13:04.194Z",
+            "tags": []
+        }
+    },
+    {
+        "model": "core.task",
+        "pk": 17,
+        "fields": {
+            "uuid": "04e776ac-88e8-4195-bbe4-f7399cfdc466",
+            "title": "Hidden task",
+            "detail": "",
+            "workspace": 59,
+            "category": 20,
+            "project": null,
+            "status": null,
+            "priority": null,
+            "parent": null,
+            "is_visible": false,
+            "estimated_start_date": null,
+            "estimated_end_date": null,
+            "actual_start_date": null,
+            "actual_end_date": null,
+            "estimated_effort": null,
+            "actual_effort": null,
+            "created_at": "2025-03-25T08:54:21.252Z",
+            "updated_at": "2025-03-25T08:57:29.612Z",
+            "tags": []
+        }
+    }
+]

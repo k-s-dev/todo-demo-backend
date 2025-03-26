@@ -68,3 +68,48 @@ SECURE_SSL_REDIRECT=True
 ### Configure project settings
 
 - settings are split across 3 files: base, dev and prod
+
+## Database
+
+### Setup core models
+
+- setup models and register with admin
+- fixtures for initial data
+
+- to prepare fixtures after models are setup and some data added
+  using admin page
+  - make admin user
+
+
+```sh
+./manage.py createsuperuser
+```
+
+```sh
+./manage.py dumpdata auth > ./core/fixtures/core/admin.json
+./manage.py dumpdata core > ./core/fixtures/core/sample-data.json
+```
+
+### Prepare db
+
+- initial load
+
+```sh
+./manage.py makemigrations && ./manage.py migrate
+./manage.py loaddata core/admin.json core/sample-data.json
+```
+
+## Run server
+
+### dev
+
+```sh
+./manage.py runserver --settings=dj_conf.settings.dev
+```
+
+### prod
+
+```sh
+./manage.py runserver --settings=dj_conf.settings.prod
+```
+
