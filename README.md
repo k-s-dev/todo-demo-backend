@@ -1,10 +1,8 @@
-# Commands
+# Operations
 
 > run commands from root of the django project
 
-## Project setup
-
-### Setup python env
+## Setup python env
 
 ```sh
 python3 -m venv .venv
@@ -27,6 +25,8 @@ sp.run("python -m pip install -r requirements-dev.txt", shell=True)
 sp.run("python -m pip freeze > requirements.txt", shell=True)
 ```
 
+## Project setup
+
 ### Start project and apps
 
 ```sh
@@ -35,3 +35,36 @@ django-admin startproject dj_conf .
 django-admin startapp core
 django-admin startapp api
 ```
+
+### Setup environments
+
+```sh
+python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+```
+
+```sh
+# .env
+SECRET_KEY="generated key"
+```
+
+```sh
+# .env.dev
+DEBUG=True
+ALLOWED_HOSTS="*"
+CSRF_COOKIE_SECURE=False
+SESSION_COOKIE_SECURE=False
+SECURE_SSL_REDIRECT=False
+```
+
+```sh
+# .env.prod
+DEBUG=False
+ALLOWED_HOSTS="*"
+CSRF_COOKIE_SECURE=True
+SESSION_COOKIE_SECURE=True
+SECURE_SSL_REDIRECT=True
+```
+
+### Configure project settings
+
+- settings are split across 3 files: base, dev and prod
