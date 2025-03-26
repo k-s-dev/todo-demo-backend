@@ -6,7 +6,8 @@ cwd = pl.Path(os.getcwd())
 if not cwd.glob(".gitignore"):
     exit(1)
 
-sp.run("source .venv/bin/python", shell=True)
+sp.Popen(["/bin/sh", ".venv/bin/activate"])
+
 sp.run("python -m pip install -r requirements-base.txt", shell=True)
 sp.run("python -m pip freeze > requirements.txt", shell=True)
 
