@@ -1,0 +1,5 @@
+pytest-django
+coverage
+autopep8
+autoflake
+django-types

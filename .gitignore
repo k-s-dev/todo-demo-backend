@@ -1,0 +1,10 @@
+*venv*/
+*cache*/
+.env
+.rough/
+db.sqlite3
+*rough/
+/static/
+.env*
+.coverage
+scripts/pythonanywhere-setup.sh
